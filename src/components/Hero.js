@@ -5,36 +5,17 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <Container
-      maxW="1300px"
-      display="flex"
-      h="100vh"
-      alignItems="center"
-      flexDirection={{ base: "column-reverse", md: "row" }}
-    >
-      <Stack height="350px" justify="space-around" mt={{ base: "8", md: "0" }}>
-        <Heading fontSize={{ base: "2xl", sm: "3xl", md: "6xl" }} as="h1">
-          Get Crypto Related Knowledge
-        </Heading>
-        <Text
-          fontSize={{ base: "sm", sm: "md", md: "lg" }}
-          as="p"
-          maxW={{ base: "100%", md: "80%" }}
-        >
-          Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit
-          aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin
-          molestie malesuada. Sed
+    <Container maxW='1300px' display='flex' height="100vh" alignItems="center" >
+      <Stack height="350px" justify="space-around">
+        <Heading as="h1" fontSize="6xl">Get Crypto Related Knowledge</Heading>
+        <Text as="p" maxW="80%" fontSize="lg">Here you get best knowledge about Crypto 
+          so here we gave you best advice about crypto 
+          so don't waste your time and get started
         </Text>
-        <Box>
-          <Button colorScheme="orange">Check Posts</Button>
-        </Box>
+        <Box><Button colorScheme="orange">Check Post</Button></Box>
       </Stack>
-      <Flex mt={{ base: "8", md: "0" }} justifyContent="center">
-        <Image
-          width={{ base: "70%", md: "auto" }}
-          mr="4"
-          src="/images/btc.svg"
-        />
+      <Flex>
+      <Image mr="4" src="/images/btc.svg" alt="" />
       </Flex>
     </Container>
   );

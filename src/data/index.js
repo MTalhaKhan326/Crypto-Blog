@@ -5,8 +5,8 @@ export const blogData = [
       "Network effects play a significant role in the cryptocurrency ecosystem. For example, if new users join a particular blockchain network in large numbers, the underlying service likely offers more utility.",
     imageUrl: "/images/pic1.webp",
     publishDate: "May 17, 2021",
-    avatar: "/images/avatar.png",
-    authorName: "Anshu Raj",
+    avatar: "/images/hamza.png",
+    authorName: "Talha Khan",
     tags: ["#network ", "#Effect"],
   },
   {
@@ -15,8 +15,8 @@ export const blogData = [
       "Polkadot is a blockchain protocol that connects multiple specialized chains into a single universal network.Blockchain is undoubtedly a ground-breaking technology that powers the entire cryptocurrency ecosystem, including Decentralized Finance.",
     imageUrl: "/images/pic2.webp",
     publishDate: "May 9, 2021",
-    avatar: "/images/avatar.png",
-    authorName: "Anshu Raj",
+    avatar: "/images/talha.png",
+    authorName: "Abdullah",
     tags: ["#Polkadot ", "#DOT"],
   },
   {
@@ -26,7 +26,7 @@ export const blogData = [
     imageUrl: "/images/pic3.webp",
     publishDate: "May 7, 2021",
     avatar: "/images/avatar.png",
-    authorName: "Anshu Raj",
+    authorName: "Saif",
     tags: ["#NFTs ", "#assets"],
   },
 ];

@@ -7,32 +7,29 @@ import { Heading } from "@chakra-ui/layout";
 import { Stack } from "@chakra-ui/layout";
 import { Tag } from "@chakra-ui/tag";
 
-const PostCard = ({ post }) => {
-  return (
-    <Stack w="20rem" boxShadow="lg" borderRadius="lg" overflow="hidden">
-      <Image src={post.imageUrl} />
-      <Stack p="4">
-        <Heading mb="4" fontSize="xl">
-          {post.title}
-        </Heading>
-        <Flex mb="4" align="center">
-          <Avatar size="sm" mr="2" src={post.avatar} />
-          <Text fontSize="md" mr="2" fontWeight="bold">
-            {post.authorName}
-          </Text>
-          <Text fontSize="md">{post.publishDate}</Text>
-        </Flex>
-        <Text mb="4">{post.description}</Text>
-        <Flex mb="4">
-          {post.tags.map((tag) => (
-            <Tag key={tag}>{tag}</Tag>
-          ))}
-        </Flex>
-        <Button alignSelf="flex-end" colorScheme="orange">
-          Read more
-        </Button>
-      </Stack>
-    </Stack>
+const PostCard = ({post}) => {
+  return( 
+  <Stack width="20rem" boxShadow="lg" borderRadius="lg" overflow="hidden">
+  <Image src={post.imageUrl} />
+  <Stack p="4">
+    <Heading fontSize="xl">{post.title}</Heading>
+    <Flex>
+      <Avatar src={post.avatar} />
+      <Text fontWeight="bold" fontSize="md">{post.authorName}</Text>
+      <Text>{post.publishDate}</Text>
+    </Flex>
+    <Text>{post.description}</Text>
+     <Flex>
+     
+      {post.tags.map((tags)=>(
+         <Tag>{post.tags}</Tag>
+      ))}
+      </Flex>     
+
+   <Button alignSelf="flex-end" colorScheme="orange">Read More</Button>
+
+  </Stack>
+  </Stack>
   );
 };
 
